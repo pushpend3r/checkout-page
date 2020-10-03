@@ -1,0 +1,24 @@
+.quantity-btn {
+  width: 125px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #828282;
+  font-size: inherit;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    border-radius: 4px;
+
+    display: inline-block;
+
+    background-color: #e0e0e0;
+    color: #828282;
+
+    padding: 0 5px;
+    font-size: 1.5em;
+  }
+}

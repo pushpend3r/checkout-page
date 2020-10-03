@@ -1,0 +1,35 @@
+.foam-input-title {
+  display: inline-block;
+  color: #4f4f4f;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.foam-input-container {
+  padding: 12.5px 10px;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  display: flex;
+
+  input,
+  img {
+    vertical-align: middle;
+  }
+
+  img {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  input,
+  select {
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    flex: 1;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

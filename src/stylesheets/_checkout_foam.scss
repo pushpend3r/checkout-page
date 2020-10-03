@@ -1,0 +1,30 @@
+.foam-container {
+  width: 55%;
+  // overflow: auto;
+  font-size: 1rem;
+  section {
+    p {
+      font-size: 1.25em;
+      margin-bottom: 1em;
+      color: $normal-color;
+    }
+
+    > * + * {
+      margin-top: 1rem;
+    }
+  }
+
+  .sidebyside {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+
+    div {
+      flex: 1;
+    }
+  }
+
+  > * + * {
+    margin-top: 3em;
+  }
+}

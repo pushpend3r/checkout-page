@@ -1,0 +1,55 @@
+.checkbox-container {
+  position: relative;
+  padding-left: 35px;
+
+  .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 25px;
+    width: 25px;
+
+    z-index: -1;
+
+    border: 1px solid #828282;
+    border-radius: 4px;
+
+    &::after {
+      content: "";
+      display: none;
+
+      position: absolute;
+      top: 0;
+      right: 25%;
+
+      width: 30%;
+      height: 60%;
+
+      border: solid $brand-color;
+      border-width: 0 4px 4px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input:checked ~ .checkbox::after {
+    display: block;
+  }
+
+  label {
+    user-select: none;
+    vertical-align: middle;
+  }
+}
